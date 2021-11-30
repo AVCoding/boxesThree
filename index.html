@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<!-- Page styles -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- JQuery -->
+		<!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.custom.min.js"></script>
+
+		<!-- <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/draggable/1.0.0-beta.12/draggable.min.js"></script> -->
+
+		<!-- <link href="Mobile-Drag-Drop-Plugin-jQuery/Mobile-Drag-Drop-Plugin-jQuery/src/draganddrop.css" rel="stylesheet">
+		<script src="//code.jquery.com/jquery.min.js"></script>
+		<script src="Mobile-Drag-Drop-Plugin-jQuery/Mobile-Drag-Drop-Plugin-jQuery/src/draganddrop.js"></script> -->
+
+		<!-- Page scripts -->
+		<script src="js/script.js"></script>
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	  
+		<title>About</title>
+	</head>
+	<body>
+	  
+	  <div id="main">	
+
+	  	<!-- <header>
+		  	<a href="javascript:void(0)" class="main-box">
+		  		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWOyhDd92k8TD7OfVPoyNi1eip08GcV6gC7w&usqp=CAU" width="40" height="40">
+		  		<span class="boxes">0</span>
+		  	</a>
+	  	</header> -->
+
+	  	<div class="items">
+	  		<div class="item" data-item="milk" >	
+	  			<a href="javascript:void(0)">
+	  				<img src="https://ychef.files.bbci.co.uk/976x549/p07vvrpj.jpg" width="35" height="35">
+	  			</a>
+	  			<!-- <span class="total">18</span><span>шт.</span>  -->
+	  			<input type="text" name="total" class="total" value="5" readonly="readonly"> шт.
+	  			<!-- <img src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png" width="15" style="display: inline;" class="arrow-right"> -->
+	  		</div>
+	  
+	  		<div class="item " draggable="true" ondragstart="drag(event)"  data-item="cola" >	
+	  			<a href="javascript:void(0)">
+	  				<img src="https://www.barista-ltd.ru/components/com_jshopping/files/img_products/coca-cola_05.jpg" width="35" height="35">
+	  			</a>
+	  			<!-- <span class="total">18</span><span>шт.</span>  -->
+	  			<input type="text" name="total" class="total" value="3" readonly="readonly"> шт.
+	  		</div>
+
+	  		<div class="item " draggable="true" ondragstart="drag(event)"   data-item="fanta" >	
+	  			<a href="javascript:void(0)">
+	  				<img src="https://www.coca-cola.ru/content/dam/one/ru/ru/products/fanta-orange-330-glass.png" width="35" height="35">
+	  			</a>
+	  			<!-- <span class="total">18</span><span>шт.</span>  -->
+	  			<input type="text" name="total" class="total" value="1" readonly="readonly"> шт.
+	  		</div>
+
+
+
+
+
+	  		<!-- <div class="item">	
+	  			<a href="javascript:void(0)">
+	  				<img src="https://www.barista-ltd.ru/components/com_jshopping/files/img_products/coca-cola_05.jpg" width="35" height="35">
+	  			</a>
+	  			<span class="total">18</span><span>шт.</span> 
+	  		</div>
+
+	  		<div class="item">	
+	  			<a href="javascript:void(0)">
+	  				<img src="https://www.coca-cola.ru/content/dam/one/ru/ru/products/fanta-orange-330-glass.png" width="35" height="35">
+	  			</a>
+	  			<span class="total">18 шт.</span>
+	  		</div> -->
+	  	</div>
+
+	  	<div class="box-wrapper" >
+	  		<img src="https://media.istockphoto.com/photos/isolated-shot-of-opened-blank-cardboard-box-on-white-background-picture-id1128890899?k=20&m=1128890899&s=612x612&w=0&h=GfjgLKbgACDs0WcVQXie7fw0_NNwu2w01RmX2MKcC-Q=" class="open-box">	
+	  		<!-- <h5>Перетащите товар сюда</h5> -->
+	  			
+	  		<div class="dropped-box" id="dropped-box">
+	  		</div>
+
+	  		<div class="wrap">
+		  		<button class="btn-wrap">в коробку</button>
+		  	</div>
+
+		  	<div class="closed-boxes">
+		  		<!-- <div class="box">
+		  			<a href="javascript:void(0)">
+		  				<span>1</span>
+				  		<img src="https://thumbs.dreamstime.com/b/carton-box-icon-package-symbols-over-white-background-vector-illustration-79950274.jpg" width="35" height="35">	
+			  		</a>
+		  		</div> -->
+		  	</div>
+		  	
+
+	  	</div>
+
+	  <!-- 	<script type="text/javascript">
+	  		  function allowDrop(ev) {
+			    ev.preventDefault();
+			  }
+
+			  function drag(ev) {
+			    ev.dataTransfer.setData("text", ev.target.id);
+			  }
+
+			  function drop(ev) {
+			    ev.preventDefault();
+			    var data = ev.dataTransfer.getData("text");
+			    ev.target.appendChild(document.getElementById(data));
+			  }
+
+	  	</script> -->
+
+	  	<div class="box-buttons">
+	  		<!-- <button>в коробку</button> -->
+	  		<button class="btn-wrap-all">Собрать</button>
+	  	</div>
+
+
+
+	  	<!-- ********** Modals ********-->
+
+
+	  	<!-- Modal box -->
+	  	<div class="box-goods-wrapper">
+	  		<div class="box-goods-container">
+	  			<span class="close">
+	  					<svg version="1.1" style="width: 15px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.878px" viewBox="0 0 122.878 122.88" enable-background="new 0 0 122.878 122.88" xml:space="preserve"><g><path style="fill: black;" d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"></path></g></svg>
+	  				</span>
+	  			<div class="box-items">
+	  				
+	  				<h2>Содержимое коробки</h2>
+	  				
+			  		<div class="box-item">	
+			  			<a href="javascript:void(0)">
+			  				<img src="https://ychef.files.bbci.co.uk/976x549/p07vvrpj.jpg" width="35" height="35">
+			  			</a>
+			  			<span class="total">18 /</span> 
+			  			<a href="javascript:void(0)">
+			  				<select>
+			  					<option>0</option>	
+			  					<option>1</option>	
+			  					<option>2</option>	
+			  					<option>3</option>	
+			  					<option>4</option>	
+			  					<option>5</option>	
+			  				</select>
+			  			</a>	
+			  		</div>
+
+			  		<div class="box-item">	
+			  			<a href="javascript:void(0)">
+			  				<img src="https://ychef.files.bbci.co.uk/976x549/p07vvrpj.jpg" width="35" height="35">
+			  			</a>
+			  			<span class="total">18 /</span>
+			  			<a href="javascript:void(0)">
+			  				<select>
+			  					<option>0</option>	
+			  					<option>1</option>	
+			  					<option>2</option>	
+			  					<option>3</option>	
+			  					<option>4</option>	
+			  					<option>5</option>	
+			  				</select>
+			  			</a>	
+			  		</div>
+
+			  		<div class="box-item">	
+			  			<a href="javascript:void(0)">
+			  				<img src="https://ychef.files.bbci.co.uk/976x549/p07vvrpj.jpg" width="35" height="35">
+			  			</a>
+			  			<span class="total">18 /</span>
+			  			<a href="javascript:void(0)">
+			  				<select>
+			  					<option>0</option>	
+			  					<option>1</option>	
+			  					<option>2</option>	
+			  					<option>3</option>	
+			  					<option>4</option>	
+			  					<option>5</option>	
+			  				</select>
+			  			</a>	
+		  			</div>
+
+		  			<div class="confirm-changes">
+				  		<button>подтвердить изменения</button>
+				  	</div>		  
+
+		  			<div class="delete-box">
+				  		<button>удалить коробку</button>
+				  	</div>			
+		  		</div>
+
+	  		</div>
+	  	</div>
+
+	  	<!-- ========================== -->
+
+	  	<!-- Modals boxes -->
+	  	<div class="boxes-wrapper">
+	  		<div class="boxes-container">
+	  			<span class="close">
+  					<svg version="1.1" style="width: 15px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.878px" viewBox="0 0 122.878 122.88" enable-background="new 0 0 122.878 122.88" xml:space="preserve"><g><path style="fill: black;" d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"></path></g></svg>
+  				</span>
+	  			<div class="boxes-items">
+	  				<h2>Коробки</h2>
+	  				
+			  		<div class="boxes-item">
+					  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVyejfUZEktFDjFgQFZGtZ1V8pdmGsPAPM4A&amp;usqp=CAU" width="35" height="35" class="box-img">	
+				  		<button class="delete">удалить</button>
+			  		</div>
+			  		<div class="boxes-item">
+					  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVyejfUZEktFDjFgQFZGtZ1V8pdmGsPAPM4A&amp;usqp=CAU" width="35" height="35" class="box-img">	
+				  		<button class="delete">удалить</button>
+			  		</div>
+			  		<div class="boxes-item">
+					  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVyejfUZEktFDjFgQFZGtZ1V8pdmGsPAPM4A&amp;usqp=CAU" width="35" height="35" class="box-img">	
+				  		<button class="delete">удалить</button>
+			  		</div>
+			  		<div class="boxes-item">
+					  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVyejfUZEktFDjFgQFZGtZ1V8pdmGsPAPM4A&amp;usqp=CAU" width="35" height="35" class="box-img">	
+				  		<button class="delete">удалить</button>
+			  		</div>
+
+		  		</div>
+
+	  		</div>
+	  	</div>
+
+	  </div>
+	
+
+	</body>
+</html>
